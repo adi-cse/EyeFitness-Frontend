@@ -14,7 +14,7 @@ const Dashboard = () => {
       <div className="p-10">
 
         <h1 className="text-4xl font-bold text-blue-900 mb-8">
-          Eye Fitness Dashboard
+          Eye Fitness
         </h1>
 
         <div className="grid md:grid-cols-3 gap-6 mb-10">
