@@ -1,30 +1,33 @@
-import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
+import Hero from "../components/Hero";
+import ProblemSection from "../components/ProblemSection";
+import FeaturesSection from "../components/FeaturesSection";
+import HowItWorks from "../components/HowItWorks";
+import MiniGamesShowcase from "../components/MiniGamesShowcase";
+import ParentDashboardPreview from "../components/ParentDashboardPreview";
+import GapSection from "../components/GapSection";
+import FutureVision from "../components/FutureVision";
+import Testimonials from "../components/Testimonials";
+import FinalCTA from "../components/FinalCTA";
+import SiteFooter from "../components/SiteFooter";
 
 const Home = () => {
   return (
     <>
       <Navbar />
-
-      <div className="min-h-screen flex flex-col justify-center items-center text-center px-5">
-
-        <h1 className="text-6xl font-bold text-blue-900 mb-5">
-          Fitness App For Your Eyes
-        </h1>
-
-        <p className="text-xl text-gray-600 max-w-2xl mb-8">
-          Daily eye exercises, lazy eye games,
-          progress tracking and healthy screen habits.
-        </p>
-
-        <Link
-          to="/signup"
-          className="bg-blue-900 text-white px-8 py-4 rounded-2xl text-lg"
-        >
-          Start Training
-        </Link>
-
-      </div>
+      <main>
+        <Hero />
+        <ProblemSection />
+        <FeaturesSection />
+        <HowItWorks />
+        <MiniGamesShowcase />
+        <GapSection />
+        <ParentDashboardPreview />
+        <FutureVision />
+        <Testimonials />
+        <FinalCTA />
+        <SiteFooter />
+      </main>
     </>
   );
 };
